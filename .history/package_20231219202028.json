@@ -1,0 +1,29 @@
+{
+   "name": "project-job-finder",
+   "version": "1.0.0",
+   "description": "A system to help developers finding their dream job",
+   "main": "index.js",
+   "scripts": {
+     "dev": "nodemon index.js"
+   },
+   "keywords": [
+      "Dev",
+      "Jobs",
+      "Opportunity",
+      "Employment",
+      "Developer"
+   ],
+   "author": "César Henrique <cesa_h_carvalho@gmail.com> (https://github.com/doncsar)",
+   "license": "ISC",
+   "dependencies": {
+      "@npmcli/fs": "^3.1.0",
+      "body-parser": "^1.20.2",
+      "express": "^4.18.2",
+      "express-handlebars": "^7.1.2",
+      "sequelize": "^6.33.0",
+      "sqlite3": "^5.1.6"
+   },
+   "devDependencies": {
+      "nodemon": "^3.0.1"
+   }
+}

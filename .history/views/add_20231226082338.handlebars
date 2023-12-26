@@ -1,0 +1,72 @@
+<div id='add-form-container' class='container'>
+   <div class='row'>
+      <div class='col-md-12'>
+         <h1 class='text-center'>Publish Your Job Offer</h1>
+      </div>
+      <div id='form-box' class='col-md-12'>
+         <h2>Fill out the form so you can get the best dev for the job!</h2>
+         <form action='/jobs'>
+            <div class='form-group'>
+               <label for='title'>Job title:</label>
+               <input
+                  type='text'
+                  class='form-control'
+                  id='title'
+                  name='title'
+                  placeholder='Type the job title'
+                  required
+               />
+               <small id='titleHelp' class='form-text text-muted'>The title is
+                  crucial, be clear and concise</small>
+            </div>
+            <div class='form-group'>
+               <label for='description'>Job Description:</label>
+               <textarea
+                  type='text'
+                  class='form-control'
+                  id='description'
+                  name='description'
+                  placeholder="Describe the developer's activities..."
+                  required
+               ></textarea>
+            </div>
+
+            <div class='form-group'>
+               <label for='company'>Hiring Company:</label>
+               <input
+                  type='text'
+                  class='form-control'
+                  id='company'
+                  name='company'
+                  placeholder='Enter the company that is hiring'
+                  required
+               />
+            </div>
+            <div class='form-group'>
+               <label for='email'>Contact Email:</label>
+               <input
+                  type='email'
+                  class='form-control'
+                  id='email'
+                  name='email'
+                  placeholder='Enter the contact email'
+                  required
+               />
+            </div>
+            <div class='form-group'>
+               <label for='salary'>Offered Salary:</label>
+               <input
+                  type='text'
+                  class='form-control'
+                  id='salary'
+                  name='salary'
+                  placeholder='Enter the job salary'
+                  required
+               />
+            </div>
+            <input type='hidden' name='new_job' value='1' />
+            <button type='submit' class='btn btn-primary'>Submit</button>
+         </form>
+      </div>
+   </div>
+</div>
